@@ -21,7 +21,7 @@ Before running this application, you need to have the following installed:
 
 1. Clone the repository:
 ```shell script
-git clone <repository-url>
+git clone https://github.com/devblaze/techtest.git
    cd wizard-world-houses
 ```
 
@@ -72,8 +72,9 @@ wizard-world-houses/
 │   ├── App.css                     # App styles
 │   ├── index.tsx                   # Entry point
 │   └── index.css                   # Global styles
-├── server/
-│   └── index.ts                    # API server
+├── backend/
+│   └── src
+│       └── index.ts                # API server
 ├── public/
 │   └── index.html                  # HTML template
 ├── package.json                    # Dependencies and scripts
@@ -93,7 +94,8 @@ This project includes a simple Express server that serves as a proxy to the Wiza
 The server starts automatically when you run `yarn start`. If you want to run just the server:
 
 ```shell script
-yarn server
+cd backend
+yarn start
 ```
 
 
@@ -105,7 +107,6 @@ In the project directory, you can run:
 - `yarn build` - Builds the app for production
 - `yarn test` - Runs tests
 - `yarn eject` - Ejects from create-react-app
-- `yarn server` - Runs only the API server
 - `yarn lint` - Runs ESLint to check for code issues
 - `yarn format` - Formats code using Prettier
 
